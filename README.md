@@ -1,16 +1,83 @@
-# React + Vite
+# Portafolio Personal - Ignacio Lobos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Portafolio personal desarrollado con React y Vite para la evaluación de Desarrollo Fullstack II en Duoc UC.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+El sitio presenta información personal, estudios, experiencia, proyectos y un formulario de contacto con validaciones del lado del cliente.
 
-## React Compiler
+## Tecnologías utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- Vite
+- HTML y CSS
+- Vitest
+- React Testing Library
 
-## Expanding the ESLint configuration
+## Estructura del proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+El proyecto utiliza el patrón de diseño Atomic Design para organizar sus componentes.
+
+- `src/components/atoms`: componentes básicos reutilizables.
+- `src/components/molecules`: componentes formados por elementos básicos.
+- `src/components/organisms`: secciones principales del portafolio.
+- `src/components/templates`: estructura general de la página.
+- `src/components/pages`: contenido de las páginas.
+- `src/assets`: recursos gráficos e imágenes.
+
+## Requisitos
+
+- Node.js instalado.
+- npm disponible mediante la instalación de Node.js.
+
+## Instalación y ejecución
+
+1. Clonar el repositorio:
+
+   ```bash
+   git clone https://github.com/IgnacioLobos-MC/Evaluacion2_Portafolio.git
+   ```
+
+2. Entrar a la carpeta del proyecto:
+
+   ```bash
+   cd Evaluacion2_Portafolio
+   ```
+
+3. Instalar las dependencias:
+
+   ```bash
+   npm install
+   ```
+
+4. Ejecutar el proyecto en modo desarrollo:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Abrir en el navegador la dirección local que muestra la terminal, normalmente `http://localhost:5173`.
+
+## Pruebas
+
+El proyecto incluye pruebas automatizadas con Vitest y React Testing Library para verificar el renderizado de componentes y el comportamiento de funcionalidades importantes, como el formulario de contacto.
+
+Para ejecutar las pruebas:
+
+```bash
+npm test
+```
+
+Para generar la versión de producción:
+
+```bash
+npm run build
+```
+
+## Autor
+
+**Ignacio Lobos**  
+Estudiante de Analista Programador — Duoc UC.
+
+GitHub: [IgnacioLobos-MC](https://github.com/IgnacioLobos-MC)
